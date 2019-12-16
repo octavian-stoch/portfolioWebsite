@@ -1,23 +1,22 @@
-from flask import Flask, flash, redirect, render_template, request, session, abort
-from random import randint
-
+from flask import Flask, redirect, url_for, request, render_template
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/success/<name>')
+def success(name):
+   return 'welcome %s' % name
+
+@app.route('/login',methods = ['POST', 'GET'])
+def login():
+   if request.method == 'POST':
+      user = request.form['nm']
+      return redirect(url_for('success',name = user))
+   else:
+      user = request.args.get('nm')
+      return redirect(url_for('success',name = user))
+
+@app.route('/')
 def index():
-    return "Flask App!"
+    return render_template('test.html')
 
-#@app.route("/hello/<string:name>")
-@app.route("/hello/<string:name>/")
-def hello(name):
-    #    return name
-
-quotes = ["hello", "bye", "solong"]
-randomNumber = randint(0,len(quotes)-1)
-quote = quotes[randomNumber] </string:name></string:name>
-
-return render_template(
-    'test.html',**locals())
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+if __name__ == '__main__':
+   app.run(debug = True)
