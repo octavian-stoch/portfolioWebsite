@@ -16,7 +16,15 @@ def login():
 
 @app.route('/')
 def index():
-    return render_template('test.html')
+    return render_template('index.html')
+
+@app.route('/saystuff')
+def saystuff():
+   return render_template('saystuff.html')
+
+@app.route('/projects')
+def projects():
+   return render_template('projects.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
