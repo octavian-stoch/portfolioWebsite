@@ -64,13 +64,40 @@ h1 {
   font-size: 2em;
 }
 mark {
-  color: #000;
-  background: #ff0;
+  color: #e8e8e8;
+  background: #ff3;
 }
 small {
   font-size: 80%;
 }
-sub,
+
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 15px, 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topnav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.topnav hover {
+    background-color: #ddd;
+    color: black;
+}
+
 sup {
   position: relative;
   font-size: 75%;
@@ -241,6 +268,15 @@ th {
   .navbar {
     display: none;
   }
+
+  div#nav{
+    text-align: center;
+  }
+
+  div#nav ul{
+    display: inline-block;
+  }
+
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -4472,6 +4508,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-text {
   margin-top: 15px;
   margin-bottom: 15px;
+  display: inline-block;
+  list-style-type: none;
 }
 @media (min-width: 768px) {
   .navbar-text {

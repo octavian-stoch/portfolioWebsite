@@ -1,76 +1,42 @@
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #444;
-    }
-    /*
-     * Formatting the header area
-     */
-    header {
-      background-color: #DFB887;
-      height: 35px;
-      width: 100%;
-      opacity: .9;
-      margin-bottom: 50px;
-    }
-    header h1.logo {
-      margin: 0;
-      font-size: 1.7em;
-      color: #fff;
-      text-transform: uppercase;
-      float: left;
-    }
-    header h1.logo:hover {
-      color: #fff;
-      text-decoration: none;
-    }
-    /*
-     * Centering the body content
-     */
-    .container {
-      width: 1200px;
-      margin: 0 auto;
-    }
-    div.home {
-      padding: 10px 0 30px 0;
-      background-color: #E6E6FA;
-      -webkit-border-radius: 6px;
-         -moz-border-radius: 6px;
-              border-radius: 6px;
-    }
-    div.about {
-      padding: 10px 0 30px 0;
-      background-color: #E6E6FA;
-      -webkit-border-radius: 6px;
-         -moz-border-radius: 6px;
-              border-radius: 6px;
-    }
-    h2 {
-      font-size: 3em;
-      margin-top: 40px;
-      text-align: center;
-      letter-spacing: -2px;
-    }
-    h3 {
-      font-size: 1.7em;
-      font-weight: 100;
-      margin-top: 30px;
-      text-align: center;
-      letter-spacing: -1px;
-      color: #999;
-    }
-    .menu {
-      float: right;
-      margin-top: 8px;
-    }
-    .menu li {
-      display: inline;
-    }
-    .menu li + li {
-      margin-left: 35px;
-    }
-    .menu li a {
-      color: #444;
-      text-decoration: none;
-    }
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+/*body css styling*/
+body {
+    background-color: #B9B9B9;
+}
