@@ -30,11 +30,19 @@ def projects():
 
 @app.route('/java')
 def javaPrograms():
-   return render_template('javaProblems.html')
+   return render_template('javaProjects.html')
 
 @app.route('/contact')
 def contact():
    return render_template('contact.html')
+
+@app.route('/python')
+def python():
+   return render_template('pythonProjects.html')
+
+@app.route('/sql')
+def sql():
+   return render_template('sqlProjects.html')
 
 if __name__ == '__main__':
    app.run(debug = True)

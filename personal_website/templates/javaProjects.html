@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Java Problems</title>
     <link rel = stylesheet href= static/css/main.css>
 </head>
 <body>
+
 <!-- Home, Projects, Contact -->
 <div class = navbar>
-    <a class="active" href="#">Home</a>
+    <a href="/">Home</a>
     <div class="dropdown">
-        <button class="dropbtn">Projects
+        <button class="dropbtn" class="active">Projects
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
@@ -22,10 +23,11 @@
     <a href="contact">Contact</a>
 </div>
 
-<h1> Projects coming soon to a localhost:5000 near you! </h1>
-<p> Java Code examples : <br> Python Code examples : <br> SQL Code examples : </p>
-
-<!--<input type = "button" onclick = "window.location.href = 'http://127.0.0.1:5000/projects';" value = "View projects" />-->
+<!-- Putting java code with explanations here -->
+<div class = javaCode>
+    <button onClick ="isCollapsed"> expanding and compacting button </button>
+        <b>Hey some code will come here</b>
+</div>
 
 </body>
 </html>
