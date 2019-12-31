@@ -7,6 +7,8 @@
 </head>
 <body>
 
+
+
 <!-- Home, Projects, Contact -->
 <div class = navbar>
     <a href="/">Home</a>
@@ -24,10 +26,39 @@
 </div>
 
 <!-- Putting java code with explanations here -->
-<div class = javaCode>
-    <button onClick ="isCollapsed"> expanding and compacting button </button>
-        <b>Hey some code will come here</b>
+<button class="accordion">
+    Robot Returning to Origin
+</button>
+<div class="panel">
+    <img src="static/img/javaproblem1.svg" alt="JavaProblem1">
 </div>
+
+<button class="accordion">
+    Title
+</button>
+<div class="panel">
+    This is my content
+</div>
+
+<button class="accordion">
+    Title
+</button>
+<div class="panel">
+    This is my content
+</div>
+
+<!-- Javascript for the accordion class-->
+<script>
+var
+accordions=document.querySelectorAll("button.accordion");
+
+for(var i = 0; i<accordions.length;i++){
+    accordions[i].onclick=function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+</script>
 
 </body>
 </html>
