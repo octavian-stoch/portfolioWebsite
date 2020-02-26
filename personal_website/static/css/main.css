@@ -23,7 +23,7 @@
 
 /* Style the current/active link */
 .navbar a.active {
-  background-color: #4CAF50;
+  background-color: #0b547e;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
@@ -115,7 +115,7 @@ button.accordion.active{
 }
 
 div.panel{
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(127,143,161,0.8);
     color:#000;
     border-radius:0 0 4px 4px;
     overflow:hidden;
@@ -128,7 +128,7 @@ div.panel{
 
 div.panel.show{
     opacity:1;
-    max-height:500px;
+    max-height:5000px;
     padding:8px;
     margin:2px 0 4px;
 }
